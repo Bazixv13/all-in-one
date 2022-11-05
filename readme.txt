@@ -1,11 +1,10 @@
  | ‌ ̄ ̄  ,　　　　　　‌ ‌ ‌  ̄ ̄  ‌‌|　
-  ヽ/ ‌　　• ‌　　•　 ‌   　ｲ　
-　|　‌ ‌　 　   ㉨　 　‌‌‌‌‌        |
-　丶 ‌ ‌　 　 ︶　 　 ‌　 ´
+  ヽ/ ‌　　• ‌　　•　 ‌   　ｲ　        ︵︵︵︵︵︵︵︵︵︵︵︵︵︵︵︵︵︵︵︵︵︵︵︵︵︵
+　|　‌ ‌　 　   ㉨　 　‌‌‌‌‌    |         ( YOU NEED TO DOWNLOAD ONLY INSTALLER AND RUN IT )
+　丶 ‌ ‌　 　 ︶　 　 ‌　 ´   ⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎭︶‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶
 　　/  ‌︶︶୨୧︶︶︶‌‌ \
 
 YOU NEED TO DOWNLOAD ONLY INSTALLER AND RUN IT
-
 
 make sure all files are in all in one folder in documents folder (a lot of things will not work without that done)
 
