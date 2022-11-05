@@ -1,7 +1,11 @@
 import os
 import firston
 import config
-os.system(f"title hakier prompt, current config: loading bars = {config.loading_bars}, typing animations = {config.typing_animation} (1 letter per {config.typing_animation_speed} second)".center(130))
+if config.manual_typing_animation_speed is True:
+    tyn = f"(1 letter per {config.typing_animation_speed} second)"
+else:
+    tyn = " "
+os.system(f"title hakier prompt, current config: loading bars = {config.loading_bars}, typing animations = {config.typing_animation} {tyn}".center(130))
 
 
 def pip():
@@ -15,7 +19,7 @@ def pip():
 
 
 if firston.on is True:
-    print("INFO:Everything seems to be downaled skipping... if something is not downalded chcnge on to False in fiston.py ")
+    print("INFO:Everything seems to be downaled skipping... if something is not downalded change on to False in fiston.py ")
     os.system("timeout 2")
 elif firston.on is False:
     pip()
@@ -52,7 +56,7 @@ def wanimation(text, s=None, t=random.uniform(.05, .1)):
 
 os.system("cls")
 print(Style.BRIGHT)
-os.system(f"title hakier prompt, current config: loading bars = {config.loading_bars}, typing animations = {config.typing_animation} (1 letter per {config.typing_animation_speed} second)".center(130))
+os.system(f"title hakier prompt, current config: loading bars = {config.loading_bars}, typing animations = {config.typing_animation} {tyn}".center(130))
 print(Fore.LIGHTGREEN_EX)
 print("")
 wanimation("Welcome Dear hecker", True)
@@ -69,7 +73,7 @@ if config.loading_bars is True:
     wanimation("4.calculator [BETA]", True)
     wanimation("chose option: ");
 if config.loading_bars is False:
-    wanimation("1.destroy the world [unavaible with current configuration, to run this edit config.py file]", True)
+    wanimation("1.destroy the world [unavaible with current config]", True)
     wanimation(f"2.hack user on discord [BETA{config.d_finished}]", True)
     wanimation("3.do not click me", True)
     wanimation("4.calculator [BETA]", True)
@@ -79,21 +83,22 @@ if tudu == "1":
     wanimation("are you sure? (y/n) ");
     ays = input(":")
     if ays == "y":
-        for i in tqdm(range(0, 100), desc="Destroying world", ascii=" ----------", unit="1 %", ncols=84):
-            time.sleep(random.uniform(21, 37))
-        time.sleep(5)
-        os.system("cls")
-        wanimation("┏┓┏┓┏┳━━━┳━━━┳┓╋╋┏━━━┓  ┏━━━┳━━━┳━━━┳━━━━┳━━━┳━━━┳━━━┳━━━┓", True)
-        wanimation('┃┃┃┃┃┃┏━┓┃┏━┓┃┃╋╋┗┓┏┓┃  ┗┓┏┓┃┏━━┫┏━┓┃┏┓┏┓┃┏━┓┃┏━┓┃┏━━┻┓┏┓┃', True)
-        wanimation('┃┃┃┃┃┃┃╋┃┃┗━┛┃┃╋╋╋┃┃┃┃  ╋┃┃┃┃┗━━┫┗━━╋┛┃┃┗┫┗━┛┃┃╋┃┃┗━━┓┃┃┃┃', True)
-        wanimation('┃┗┛┗┛┃┃╋┃┃┏┓┏┫┃╋┏┓┃┃┃┃  ╋┃┃┃┃┏━━┻━━┓┃╋┃┃╋┃┏┓┏┫┃╋┃┃┏━━┛┃┃┃┃', True)
-        wanimation('┗┓┏┓┏┫┗━┛┃┃┃┗┫┗━┛┣┛┗┛┃  ┏┛┗┛┃┗━━┫┗━┛┃ ┃┃ ┃┃┃┗┫┗━┛┃┗━━┳┛┗┛┃', True)
-        wanimation('╋┗┛┗┛┗━━━┻┛┗━┻━━━┻━━━┛  ┗━━━┻━━━┻━━━┛ ┗┛ ┗┛┗━┻━━━┻━━━┻━━━┛', True)
-        print("")
-        os.system("pause")
-        wanimation("colosing in 1 miute", True)
-        os.system("timeout 60")
-    elif ays != "y":
+        if config.loading_bars is True:
+            for i in tqdm(range(0, 100), desc="Destroying world", ascii=" ----------", unit="1 %", ncols=84):
+                time.sleep(random.uniform(21, 37))
+            time.sleep(5)
+            os.system("cls")
+            wanimation("┏┓┏┓┏┳━━━┳━━━┳┓╋╋┏━━━┓  ┏━━━┳━━━┳━━━┳━━━━┳━━━┳━━━┳━━━┳━━━┓", True)
+            wanimation('┃┃┃┃┃┃┏━┓┃┏━┓┃┃╋╋┗┓┏┓┃  ┗┓┏┓┃┏━━┫┏━┓┃┏┓┏┓┃┏━┓┃┏━┓┃┏━━┻┓┏┓┃', True)
+            wanimation('┃┃┃┃┃┃┃╋┃┃┗━┛┃┃╋╋╋┃┃┃┃  ╋┃┃┃┃┗━━┫┗━━╋┛┃┃┗┫┗━┛┃┃╋┃┃┗━━┓┃┃┃┃', True)
+            wanimation('┃┗┛┗┛┃┃╋┃┃┏┓┏┫┃╋┏┓┃┃┃┃  ╋┃┃┃┃┏━━┻━━┓┃╋┃┃╋┃┏┓┏┫┃╋┃┃┏━━┛┃┃┃┃', True)
+            wanimation('┗┓┏┓┏┫┗━┛┃┃┃┗┫┗━┛┣┛┗┛┃  ┏┛┗┛┃┗━━┫┗━┛┃ ┃┃ ┃┃┃┗┫┗━┛┃┗━━┳┛┗┛┃', True)
+            wanimation('╋┗┛┗┛┗━━━┻┛┗━┻━━━┻━━━┛  ┗━━━┻━━━┻━━━┛ ┗┛ ┗┛┗━┻━━━┻━━━┻━━━┛', True)
+            print("")
+            os.system("pause")
+            wanimation("colosing in 1 miute", True)
+            os.system("timeout 60")
+    elif ays != "y" or config.loading_bars is False:
         wanimation("closing")
         wanimation("...", True, random.uniform(2, 4))
         os.system("exit")
