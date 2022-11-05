@@ -6,7 +6,7 @@
 
 INSTALLER UNDER HERE: https://github.com/Bazixv13/all-in-one/releases/tag/0.0.1
 
-make sure all files are in all in one folder in documents folder (a lot of things will not work without that done)
+make sure all files are in "all in one" folder in documents folder (a lot of things will not work without that done)
 
 Chceck if pip is recognized command in cmd (Command Prompt) if not go to settings -> apps -> aplications and functions -> search for python -> click modify -> click yes -> modify -> make sure you have pip selected -> Next -> chceck box(add python to environment variables) -> click Install -> turn off all command prompt windows and turn the script again
 
