@@ -10,7 +10,9 @@ import time
 from colorama import Fore, Back, Style
 import random
 
+
 print(" ")
+
 
 bot = commands.Bot(command_prefix=commands.when_mentioned_or('^'), help_command=None)
 activity = activity
@@ -46,7 +48,6 @@ async def on_ready():
     f.write(f"username = '{user}'".encode("utf-8"))
     f.close()
     await bot.close()
-
 
 
 bot.run(config.bot_token)
