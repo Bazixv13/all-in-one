@@ -4,7 +4,7 @@
 　丶 ‌ ‌　 　 ︶　 　 ‌　 ´   ⎽⎽⎽⎽⎽⎽⎽⎽⎽⎽⎭︶‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶‌‌︶
 　　/  ‌︶︶୨୧︶︶︶‌‌ \
 
-INSTALLER UNDER HERE: https://github.com/Bazixv13/all-in-one/releases/tag/0.0.12
+INSTALLER UNDER HERE: https://github.com/Bazixv13/all-in-one/releases/tag/0.0.2.1
 
 make sure all files are in "all in one" folder in documents folder (a lot of things will not work without that done)
 
